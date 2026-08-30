@@ -128,7 +128,6 @@
             position: relative;
         }
 
-        
         .overview-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -141,7 +140,6 @@
             padding: 2.5rem 1.5rem;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-top: 5px solid #FF9933;
             transition: transform 0.3s;
         }
 
@@ -222,10 +220,7 @@
             max-width: 200px;
         }
 
-        .medal-box.gold { border-left: 6px solid #FFD700; }
-        .medal-box.silver { border-left: 6px solid #C0C0C0; }
-        .medal-box.bronze { border-left: 6px solid #CD7F32; }
-        .medal-box.total { border-left: 6px solid #000080; }
+
 
         .medal-box span {
             display: block;
@@ -316,7 +311,6 @@
             padding: 2.5rem 1.5rem;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-top: 5px solid #138808;
             transition: transform 0.3s;
         }
 
@@ -355,13 +349,16 @@
             padding: 3rem;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden; 
         }
 
         .contact-info p {
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
+            flex-wrap: wrap; 
             gap: 10px;
+            word-break: break-word; 
         }
 
         .contact-info i {
@@ -382,7 +379,6 @@
             resize: vertical;
             height: 120px;
         }
-        
         
         .send-message-btn {
             width: 100%;
@@ -467,8 +463,6 @@
             font-size: 0.9rem;
             color: #bbb;
         }
-
-
         
         @media (max-width: 992px) {
             .section-title { font-size: 2.2rem; }
@@ -516,9 +510,10 @@
             }
             
             .contact-container {
-                padding: 1.5rem;
+                padding: 1.5rem; 
                 grid-template-columns: 1fr; 
                 gap: 2rem;
+                width: 100%;
             }
 
             .footer-container {
@@ -656,10 +651,10 @@
         <h2 class="section-title">Medal Standings & Highlights</h2>
         
         <div class="medal-tally">
-            <div class="medal-box gold">Gold <span>13</span></div>
-            <div class="medal-box silver">Silver <span>17</span></div>
-            <div class="medal-box bronze">Bronze <span>9</span></div>
-            <div class="medal-box total">Total <span>39</span></div>
+            <div class="medal-box">🥇 Gold <span>13</span></div>
+            <div class="medal-box">🥈 Silver <span>17</span></div>
+            <div class="medal-box">🥉 Bronze <span>9</span></div>
+            <div class="medal-box">🏆 Total <span>39</span></div>
         </div>
 
         <div class="table-container">
